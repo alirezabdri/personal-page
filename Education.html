@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alireza Bordbari </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+  </head>
+  
+  
+  
+  <body>
+	
+    <div>
+	    <!-- sidebar -->
+		<div id="mySidenav" class="sidenav-container">
+			<span class="drawer-close-button">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</span>
+			<a href="index.html" onclick="closeNav()" id="home-link">Home</a>
+			<a href="Education.html" onclick="closeNav()" id="education-link">Education</a>
+			<a href="WorkExperience.html" onclick="closeNav()" id="work-link">Work and skills</a>
+			<a href="contact.html" onclick="closeNav()" id="contact-link">Contact Me</a>
+		</div>
+
+		<div class="backdrop-container" id="backdrop"></div>
+		<nav>
+			<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
+		</nav>
+	
+		<!-- content -->
+		<div class="edu">
+	        <h1>Education</h1> 
+			<ul>
+			    <li>
+					<p align="left"><strong>B.E. in Computer Engineering - Software  </strong></p>
+					
+					<blockquote >
+						<p align="left">2016 - Persent, </p>
+						<p align="left"><a href="http://en.mshdiau.ac.ir/en/">Islamic Azad University of Mashhad</a>, Mashhad, Iran. </p>
+			  		</blockquote>
+				</li>
+				
+				<li>
+					<p align="left"><strong>Diploma in Mathematics and Physics </strong></p>
+					
+					<blockquote>
+					<p align="left">2012 - 2016, </p>
+					<p align="left">Hekmat High School , Mashhad, Iran</p>
+					</blockquote>
+				</li>
+          </ul>
+		</div>
+	
+	</div>
+	
+    
+	<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "25%" //opens side navbar by 70 percent
+		document.getElementById('backdrop').style.display = "block" //displays overlay
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0"
+		document.getElementById('backdrop').style.display = "none"
+	}
+	</script>
+	 
+  </body>
+ </html>
+ 
+ 
+ 
+ 
+ 
